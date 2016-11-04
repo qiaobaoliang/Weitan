@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorMainBackground">
+    <ImageView
+        android:id="@+id/action_bar_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:src="@mipmap/ic_bar_back" />
+        <!--android:background="@drawable/action_bar_back_bg_selector"/>-->
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="标题"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_person"
+            android:icon="@mipmap/ic_menu_person"
+            android:title="个人资料" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@mipmap/ic_menu_shop"
+            android:title="商城" />
+        <item
+            android:id="@+id/nav_rang"
+            android:icon="@mipmap/ic_menu_rang"
+            android:title="排行榜" />
+        <item
+            android:id="@+id/nav_seting"
+            android:icon="@mipmap/ic_menu_set"
+            android:title="设置" />
+    </group>
+</menu>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorMainBackground"
+    tools:context="com.example.joe.wei.model.activity.PersonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.example.joe.wei.model.activity.ActionBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.joe.wei.model.activity.ActionBar>
+        <LinearLayout
+            android:id="@+id/person_tou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.joe.wei.widgt.AvatarImageView
+                android:layout_width="96dip"
+                android:layout_height="96dip"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_touxiang" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="6dp"
+                android:text="Fellow"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <!--三项总-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:weightSum="3">
+            <!--第一栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/corners"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:background="@drawable/corners"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:text="距离"
+                        android:textColor="#fff" />
+                    <View
+                        android:layout_width="46sp"
+                        android:layout_height="3sp"
+                        android:gravity="center_horizontal"
+                        android:background="@color/colorDrawerChecked"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/person_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="7777"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <!--//第二栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/corners"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:background="@drawable/corners"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:text="步数"
+                        android:textColor="#fff" />
+                    <View
+                        android:layout_width="46sp"
+                        android:layout_height="3sp"
+                        android:gravity="center_horizontal"
+                        android:background="@color/colorDrawerChecked"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/person_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="12300"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <!--//第三栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/corners"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:background="@drawable/corners"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:text="卡路里"
+                        android:textColor="#fff" />
+                    <View
+                        android:layout_width="68sp"
+                        android:layout_height="3sp"
+                        android:gravity="center_horizontal"
+                        android:background="@color/colorDrawerChecked"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/person_calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="777"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
